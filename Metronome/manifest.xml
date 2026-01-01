@@ -5,7 +5,7 @@
         Use "Monkey C: Edit Application" from the Visual Studio Code command palette
         to update the application attributes.
     -->
-    <iq:application id="6de5ce29-c984-4031-92d1-b2e8f1f6a9e8" type="watch-app" name="@Strings.AppName" entry="MetronomeApp" launcherIcon="@Drawables.AppIcon" minApiLevel="5.0.0">
+    <iq:application id="5cfe087d-f2ab-43ba-8a25-0e89beb6e7df" type="watch-app" name="@Strings.AppName" entry="MetronomeApp" launcherIcon="@Drawables.AppIcon" minApiLevel="5.0.0">
         <!--
             Use the following from the Visual Studio Code comand palette to edit
             the build targets:
@@ -28,6 +28,7 @@
             <iq:product id="fenix7xpronowifi"/>
             <iq:product id="fenix843mm"/>
             <iq:product id="fenix847mm"/>
+            <iq:product id="fenix8pro47mm"/>
             <iq:product id="fenix8solar47mm"/>
             <iq:product id="fenix8solar51mm"/>
             <iq:product id="fenixe"/>
@@ -56,6 +57,8 @@
             <iq:product id="venu2s"/>
             <iq:product id="venu3"/>
             <iq:product id="venu3s"/>
+            <iq:product id="venu441mm"/>
+            <iq:product id="venu445mm"/>
             <iq:product id="venusq2"/>
             <iq:product id="venusq2m"/>
             <iq:product id="venux1"/>

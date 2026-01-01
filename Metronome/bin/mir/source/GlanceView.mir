@@ -1,0 +1,28 @@
+[ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\GlanceView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\GlanceView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\GlanceView.mc"; @line = 5; glance = true; @symbol_classdef = [GlanceView,5,6,16]; @symbol_extends<0> = [WatchUi,5,25,32]; @symbol_extends<1> = [GlanceView,5,33,43]; ]
+class GlanceView extends WatchUi.GlanceView {
+    [ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\GlanceView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\GlanceView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\GlanceView.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; @symbol_param<0> = [view,6,24,28]; ]
+    function initialize(view) as Void {
+C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_GlanceView_mc_6_30_8_4_start:
+[ "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\GlanceView.mc" 7 8 ]
+        symbol [ GlanceView %tmp.2 7 8 18 ];
+        %tmp.2 = getv ? :GlanceView;
+        symbol [ initialize %tmp.3 7 19 29 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_GlanceView_mc_6_30_8_4_stop:
+    }
+}
+[ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\GlanceView.mc"; @line = 1; ]
+<init> {
+}

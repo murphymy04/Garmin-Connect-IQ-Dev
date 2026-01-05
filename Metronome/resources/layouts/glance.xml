@@ -1,0 +1,6 @@
+<layout id="Glance">
+    <label id="bpmLabel"
+        x="center" y="center"
+        text="@Strings.bpmLabel"
+        justification="Graphics.TEXT_JUSTIFY_CENTER"/>
+</layout>

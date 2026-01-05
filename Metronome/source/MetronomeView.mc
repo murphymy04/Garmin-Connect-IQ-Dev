@@ -19,7 +19,9 @@ class MetronomeView extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
-        app.controller.startMetronome();
+        if (app.userStarted) {
+            app.getController().startMetronome();
+        }
     }
 
     // Update the view

@@ -12,6 +12,12 @@ module Rez {
     } // Drawables
 
     module Layouts {
+        function Glance(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_bpmLabel = new WatchUi.Text({:identifier=>"bpmLabel", :locX=>(dc.getWidth() * 0.5), :locY=>((dc.getHeight() - dc.getFontHeight(Graphics.FONT_MEDIUM)) * 0.5), :text=>$.Rez.Strings.bpmLabel, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            return [rez_cmp_local_text_bpmLabel] as Array<WatchUi.Drawable>;
+        }
+
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
             var rez_cmp_local_var_dc_getWidth = dc.getWidth();
 

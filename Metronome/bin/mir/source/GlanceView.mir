@@ -22,6 +22,15 @@ C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_GlanceView_mc_6_30_
         invoke %tmp.2 %tmp.3();
 C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_GlanceView_mc_6_30_8_4_stop:
     }
+    [ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\GlanceView.mc"; @line = 10; @symbol_functiondef = [onShow,10,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\GlanceView.mc"; @line = 14; @symbol_functiondef = [onHide,14,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\GlanceView.mc"; @line = 18; @symbol_functiondef = [onUpdate,18,13,21]; @symbol_param<0> = [dc,18,22,24]; @symbol_param<0>_type<0> = [Dc,18,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+    }
 }
 [ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\GlanceView.mc"; @line = 1; ]
 <init> {

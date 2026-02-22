@@ -1,0 +1,140 @@
+[ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Graphics,3,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [System,4,13,19]; ]
+using Toybox.System;
+[ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc"; @line = 6; @symbol_classdef = [MetronomeGlanceView,6,6,25]; @symbol_extends<0> = [WatchUi,6,34,41]; @symbol_extends<1> = [GlanceView,6,42,52]; ]
+class MetronomeGlanceView extends WatchUi.GlanceView {
+    [ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
+    function initialize() as Void {
+C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_MetronomeGlanceView_mc_8_26_10_4_start:
+[ "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc" 9 8 ]
+        symbol [ GlanceView %tmp.2 9 8 18 ];
+        %tmp.2 = getv ? :GlanceView;
+        symbol [ initialize %tmp.3 9 19 29 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_MetronomeGlanceView_mc_8_26_10_4_stop:
+    }
+    [ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc"; @line = 12; @symbol_functiondef = [onUpdate,12,13,21]; @symbol_param<0> = [dc,12,22,24]; ]
+    function onUpdate(dc) {
+C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_MetronomeGlanceView_mc_12_26_16_4_start:
+[ "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc" 13 8 ]
+        [ "C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_MetronomeGlanceView_mc_12_26_16_4_start" "C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_MetronomeGlanceView_mc_12_26_16_4_stop" ]
+        %text.1 = local;
+        symbol [ text %text.1 13 12 16 ];
+        %tmp.1 = "BPM: ";
+        symbol [ Storage %tmp.3 13 29 36 ];
+        %tmp.3 = getv ? :Storage;
+        symbol [ getValue %tmp.4 13 37 45 ];
+        %tmp.4 = getv function %tmp.3 :getValue;
+        %tmp.5 = "bpm";
+        %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
+        symbol [ toString %tmp.7 13 53 61 ];
+        %tmp.7 = getv function %tmp.6 :toString;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = add %tmp.1 %tmp.8;
+        lputv %text.1 %tmp.9;
+        symbol [ text %text.1 13 12 16 ];
+[ "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc" 14 8 ]
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 14 8 10 ];
+        symbol [ setColor %tmp.11 14 11 19 ];
+        %tmp.11 = getv function %tmp.10 :setColor;
+        %tmp.12 = 0xffffff;
+        symbol [ Graphics %tmp.13 14 30 38 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.14 14 39 56 ];
+        %tmp.14 = getv %tmp.13 :COLOR_TRANSPARENT;
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.14);
+[ "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc" 15 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 15 8 10 ];
+        symbol [ drawText %tmp.16 15 11 19 ];
+        %tmp.16 = getv function %tmp.15 :drawText;
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 15 20 22 ];
+        symbol [ getWidth %tmp.18 15 23 31 ];
+        %tmp.18 = getv function %tmp.17 :getWidth;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = 3;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 15 37 39 ];
+        symbol [ getHeight %tmp.23 15 40 49 ];
+        %tmp.23 = getv function %tmp.22 :getHeight;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = 2;
+        %tmp.26 = div %tmp.24 %tmp.25;
+        symbol [ Graphics %tmp.27 15 55 63 ];
+        %tmp.27 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.28 15 64 74 ];
+        %tmp.28 = getv %tmp.27 :FONT_SMALL;
+        %tmp.29 = lgetv %text.1;
+        symbol [ text %tmp.29 15 76 80 ];
+        symbol [ Graphics %tmp.30 15 82 90 ];
+        %tmp.30 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.31 15 91 110 ];
+        %tmp.31 = getv %tmp.30 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.32 15 113 121 ];
+        %tmp.32 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.33 15 122 142 ];
+        %tmp.33 = getv %tmp.32 :TEXT_JUSTIFY_VCENTER;
+        %tmp.34 = bitor %tmp.31 %tmp.33;
+        invoke %tmp.15 %tmp.16(%tmp.21, %tmp.26, %tmp.28, %tmp.29, %tmp.34);
+C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_MetronomeGlanceView_mc_12_26_16_4_stop:
+    }
+    [ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc"; @line = 19; @symbol_functiondef = [onSelect,19,13,21]; ]
+    function onSelect() {
+C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_MetronomeGlanceView_mc_19_24_29_4_start:
+[ "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc" 20 8 ]
+        [ "C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_MetronomeGlanceView_mc_19_24_29_4_start" "C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_MetronomeGlanceView_mc_19_24_29_4_stop" ]
+        %app.1 = local;
+        symbol [ app %app.1 20 12 15 ];
+        %tmp.1 = self;
+        symbol [ getApp %tmp.2 20 18 24 ];
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %app.1 %tmp.3;
+        symbol [ app %app.1 20 12 15 ];
+[ "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc" 21 8 ]
+        %tmp.4 = lgetv %app.1;
+        symbol [ app %tmp.4 21 8 11 ];
+        %tmp.5 = true;
+        symbol [ userStarted ? 21 12 23 ];
+        putv %tmp.4 :userStarted %tmp.5;
+[ "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc" 23 8 ]
+        symbol [ WatchUi %tmp.6 23 8 15 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.7 23 16 24 ];
+        %tmp.7 = getv function %tmp.6 :pushView;
+        symbol [ MetronomeView %tmp.11 24 16 29 ];
+        %tmp.11 = getv ? :MetronomeView;
+        %tmp.8 = newc %tmp.11 ();
+        symbol [ MetronomeDelegate %tmp.15 25 16 33 ];
+        %tmp.15 = getv ? :MetronomeDelegate;
+        %tmp.12 = newc %tmp.15 ();
+        symbol [ WatchUi %tmp.16 26 12 19 ];
+        %tmp.16 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.17 26 20 28 ];
+        %tmp.17 = getv %tmp.16 :SLIDE_UP;
+        invoke %tmp.6 %tmp.7(%tmp.8, %tmp.12, %tmp.17);
+[ "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc" 28 8 ]
+        %tmp.18 = true;
+        ret %tmp.18;
+C__Users_myles_Garmin_Garmin_Connect_IQ_Dev_Metronome_source_MetronomeGlanceView_mc_19_24_29_4_stop:
+    }
+}
+[ @file = "C:\Users\myles\Garmin\Garmin Connect IQ Dev\Metronome\source\MetronomeGlanceView.mc"; @line = 1; ]
+<init> {
+}
